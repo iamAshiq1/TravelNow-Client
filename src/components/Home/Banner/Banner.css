@@ -1,0 +1,23 @@
+
+.gg{
+    height: 91vh;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+}
+
+
+@media screen and (min-width: 300px) and (max-width: 600px) { 
+    .gg{
+        height: 35vh;
+    }
+    h3{
+        
+        font-size: 22px;
+    }
+    p{
+        font-size: 11px;
+    }
+    .bimg{
+        display: none;
+    }
+}

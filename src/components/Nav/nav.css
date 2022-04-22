@@ -1,0 +1,129 @@
+.nav{
+  background-color: transparent;
+}
+.link {
+  font-weight: bold;
+  padding: 6px 10px;
+  margin: 2px 7px;
+  color: black;
+  border-radius: 5px;
+  box-shadow: 1px 1px 3px darkgray;
+}
+.link:hover{
+  background-color: #404DB6;
+  color: white;
+  border-radius: 4px;
+}
+.bimg{
+  width: 12%;
+  
+  margin-left: 5px;
+}
+
+/* =================================== */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.action .menu {
+  position: absolute;
+  top: 120px;
+  right: 14px;
+  padding: 10px 0px;
+  background: rgb(49, 49, 50);
+  width: 225px;
+  box-sizing: 0 5px 25px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  transition: 0.5s;
+  visibility: hidden;
+  opacity: 0;
+}
+.action .menu.active{
+    top: 45px;
+    visibility: visible;
+    opacity: 1;
+}
+.action .menu h3 {
+  width: 100%;
+  text-align: center;
+  font-size: 16px;
+  padding: 20px 0;
+  font-weight: 600;
+  color: lightgray;
+  line-height: 1em;
+}
+
+.action .menu::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: 206px;
+  width: 15px;  
+  height: 15px;
+  background: rgb(49, 49, 50);
+  transform: rotate(45deg);
+}
+.action .menu ul li {
+    list-style: none;
+    padding: 10px 0px;
+    border-top: 1px solid rgba(0,0,0,0.5);
+    display: flex;
+    align-items: center;
+}
+.action .menu ul li img {
+    max-width: 20px;
+    margin-left: 10px;
+    opacity: 0.5;
+    transition: 0.5s;
+    
+    margin-left: 0px;
+    margin-right: 8px;
+}
+.action .menu ul li:hover img {
+    opacity: 1;
+}
+.action .menu ul li a{
+    display: inline-block;
+    text-decoration: none;
+    color:gray;
+    font-weight: 500;
+    transition: 0.5s;
+}
+.action .menu ul li:hover a{
+    color: #1c47a6;
+}  
+.username{
+  display: none;
+}
+
+/* ================================= */
+
+
+
+@media screen and (min-width: 300px) and (max-width: 600px) { 
+
+.action {
+  display: none;
+}
+.username{
+
+  display:block;
+  font-size: 16px;
+}
+.bannerText{
+  margin-top: -5px;
+}
+  .btn{
+    margin-top: 5px;
+    margin-bottom: -8px;
+  }
+ .name{
+   margin-bottom: 0px;
+   margin-top: -8px;
+   margin-left: 8px;
+   font-weight: bold;
+   font-size: 14px;
+ }
+}
